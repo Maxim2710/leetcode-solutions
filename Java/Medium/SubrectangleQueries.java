@@ -12,7 +12,7 @@ public class SubrectangleQueries {
     }
 
     public void updateSubrectangle(int row1, int col1, int row2, int col2, int newValue) {
-        updates.add(new int[]{row1, col1, row2, col2, newValue})
+        updates.add(new int[]{row1, col1, row2, col2, newValue});
     }
 
     public int getValue(int row, int col) {
