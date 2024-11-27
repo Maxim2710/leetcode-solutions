@@ -1,0 +1,22 @@
+package Easy;
+
+public class DIStringMatch {
+    public int[] diStringMatch(String s) {
+        int n = s.length();
+        int low = 0;
+        int high = n;
+        int[] perm = new int[n + 1];
+
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == 'I') {
+                perm[i] = low++;
+            } else {
+                perm[i] = high--;
+            }
+        }
+
+        perm[n] = low;
+
+        return perm;
+    }
+}
